@@ -1,0 +1,7 @@
+@import '@servicenow/sass-kit/host';
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}

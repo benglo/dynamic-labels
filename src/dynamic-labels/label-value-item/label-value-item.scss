@@ -1,0 +1,19 @@
+.item {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    &__label {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    &__value {
+        font-size: 1rem;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}

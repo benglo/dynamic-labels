@@ -1,0 +1,61 @@
+{
+	"components": {
+	    "x-qhgc2-dynamic-labels": {
+	        "innerComponents": [],
+			"uiBuilder": {
+				"associatedTypes": ["global.core", "global.landing-page"],
+				"label": "Dynamic labels",
+				"icon": "document-outline",
+				"description": "A description of my component",
+				"category": "primitives"
+			},
+			"properties": [
+				{
+					"name": "items",
+					"label": "Items",
+					"description": "The items to display",
+					"fieldType": "json",
+					"typeMetadata": {
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"label": {
+										"type": "string"
+									},
+									"value": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					},
+					"defaultValue": "[]"
+				},
+				{
+					"name": "separatorWidth",
+					"label": "Separator width",
+					"description": "The width in pixels of the separator",
+					"fieldType": "string",
+					"defaultValue": "1px",
+					"selectable": false,
+					"valueType": "string",
+					"readonly": false
+				},
+				{
+					"name": "separatorColor",
+					"label": "Separator color",
+					"description": "The color of the separator",
+					"fieldType": "string",
+					"defaultValue": "#000000",
+					"selectable": false,
+					"valueType": "string",
+					"readonly": false
+				}
+			]
+
+	    }
+	},
+	"scopeName": "x_qhgc2_cmp_dynlab"
+}
